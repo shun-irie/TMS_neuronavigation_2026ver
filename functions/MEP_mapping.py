@@ -1124,6 +1124,7 @@ if __name__ == "__main__":
     savePath = tf.askdirectory()
     modes = ["landmark","ControlPoints","Both","NoScanner"]
     affine_mode = [True,False]
+    
     for mode in modes:
         for am in affine_mode:
             MEPs = MEP_mapping(MEP_path,savePath,subj_num=int(subj_num),
