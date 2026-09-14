@@ -39,7 +39,7 @@ The following components are required for AprilTag-based tracking:
   * For the recommended tag size, layout, and printing specifications, please refer to `tag.pdf`.
 * Wi-Fi network
 
-  * The smartphone and the computer running the registration system must be connected to the same network.
+  * The smartphone and the computer running MEP recording system must be connected to the same network (see VI file).
   * UDP communication between the devices must be available.
 
 ### 3.2 Registration and Neuro-navigation System
