@@ -2,7 +2,7 @@
 
 ## 1. Objective
 
-The aim of this repository is to publish the source code of the AprilTag-based neuro-navigation system developed at Dokkyo Medical University.
+The aim of this repository is to publish the source code of the AprilTag-based neuro-navigation system developed at Dokkyo Medical University and Tokyo Metropolitan College of Industrial Technology.
 
 This system is designed to support neuro-navigation using AprilTag-based tracking and coordinate registration techniques.
 
