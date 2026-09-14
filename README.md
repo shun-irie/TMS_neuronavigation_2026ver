@@ -4,96 +4,140 @@
 
 The aim of this repository is to publish the source code of the AprilTag-based neuro-navigation system developed at Dokkyo Medical University.
 
-Certain technologies, methods, algorithms, and system configurations implemented in this software are the subject of pending patent applications.
+This system is designed to support neuro-navigation using AprilTag-based tracking and coordinate registration techniques.
 
-This repository is made publicly available primarily for academic research, scientific reproducibility, evaluation, and educational purposes.
+Certain technologies implemented in this system are the subject of pending patent applications.
 
-**Public disclosure of the source code does not constitute a grant of any patent rights.**
+Please refer to `LICENSE.txt` for conditions of use, including restrictions related to commercial use and patent rights.
 
-Any use, implementation, reproduction, modification, redistribution, or commercialization of technologies that fall within the scope of the relevant patent applications may require separate authorization from the patent holder.
+## 2. Features
 
-Unauthorized use of technologies covered by the relevant patent rights or pending patent applications is not permitted.
+The system includes functions for:
 
-## 2. Permitted Use
+* AprilTag-based position and orientation tracking
+* Registration between physical and anatomical coordinate systems
+* Integration of individual head surface data
+* Transformation of coordinates into standardized brain space
+* Estimation and visualization of neuro-navigation targets
 
-Unless otherwise authorized in writing, this software may be used for:
+The exact functions available may differ depending on the version of the repository.
 
-* Academic research
-* Non-commercial scientific research
-* Reproduction and validation of published research
-* Educational purposes
-* Personal evaluation and testing
+## 3. Requirements
 
-Users may modify the source code for these non-commercial purposes, subject to the terms of the applicable software license.
+The required software and hardware depend on the configuration of the system.
 
-## 3. Patent Rights
+Typical requirements include:
 
-Certain components and/or methods related to this software are protected or may become protected by patent rights.
+* Python
+* AprilTag detection library
+* Compatible camera device
+* Required Python packages
+* Individual head surface or anatomical data
+* Appropriate tracking markers and experimental hardware
 
-The software license applicable to this repository and the patent rights associated with the underlying technology are separate.
+Install the required Python packages using:
 
-Permission to access, copy, modify, or redistribute the source code does **not** automatically grant permission to practice an invention covered by any patent or pending patent application.
+```bash
+pip install -r requirements.txt
+```
 
-No patent license is granted, whether expressly, by implication, estoppel, or otherwise, except where explicitly provided in writing by the relevant patent holder.
+## 4. How to Use
 
-Users are responsible for determining whether their intended use falls within the scope of any applicable patent rights.
+### 4.1 Clone the Repository
 
-## 4. Commercial Use
+```bash
+git clone <repository-url>
+cd <repository-name>
+```
 
-Commercial use of this software or the associated patented or patent-pending technology is prohibited without prior written authorization.
+### 4.2 Install Dependencies
 
-Commercial use includes, but is not limited to:
+```bash
+pip install -r requirements.txt
+```
 
-* Incorporation into commercial software, devices, or systems
-* Development or sale of products incorporating this technology
-* Provision of paid clinical, medical, research, or technical services
-* Use by or on behalf of a commercial entity for product development
-* Contract research or development performed for commercial purposes
-* Redistribution of this software as part of a commercial product or service
-* Licensing, sublicensing, or otherwise commercially exploiting the associated technology
+### 4.3 Prepare the Experimental Environment
 
-Organizations or individuals interested in commercial use should contact the authors or the relevant technology licensing office of Dokkyo Medical University.
+Before running the system, prepare the required hardware and data.
 
-## 5. Research Publications
+Depending on the experimental setup, this may include:
 
-If this software is used in academic research, users are requested to cite the relevant publication describing the Dokkyo NeuroNavigation System.
+* Placement of AprilTags
+* Camera configuration
+* Calibration of the tracking environment
+* Acquisition or loading of individual head surface data
+* Registration of anatomical landmarks
+* Definition of target coordinates
 
-Citation information will be provided here upon publication.
+### 4.4 Configure the System
 
-## 6. Medical and Clinical Disclaimer
+Set the parameters required for your experimental environment.
 
-This software has been developed for research purposes.
+These may include:
 
-It is not provided as a certified or approved medical device and should not be used for clinical diagnosis, treatment decisions, or other medical purposes unless separately validated and authorized in accordance with applicable laws and regulations.
+* Camera parameters
+* AprilTag IDs and marker sizes
+* Network settings
+* Coordinate transformation parameters
+* Anatomical landmark coordinates
+* Target coordinates
 
-The authors and affiliated institutions make no representations or warranties regarding clinical accuracy, safety, regulatory compliance, or fitness for any particular medical purpose.
+Refer to the configuration files and comments in the source code for details.
 
-## 7. Disclaimer of Warranty
+### 4.5 Run the System
 
-This software is provided **"AS IS"**, without warranty of any kind, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, accuracy, reliability, and non-infringement.
+Run the appropriate main program for your configuration.
 
-In no event shall the authors, contributors, or affiliated institutions be liable for any claim, damages, or other liability arising from the use of this software.
+For example:
 
-## 8. License
+```bash
+python main.py
+```
 
-This repository is intended for non-commercial use.
+The exact execution command may differ depending on the version and experimental configuration.
 
-The source code should be distributed under a license that is consistent with this restriction. A non-commercial software license, such as the **PolyForm Noncommercial License**, may be appropriate.
+## 5. Important Notes
 
-Please refer to the `LICENSE` file included in this repository for the legally applicable terms.
+Appropriate calibration and registration are required before using this system.
 
-Where there is any conflict between this README and the `LICENSE` file, the terms of the `LICENSE` file shall govern with respect to copyright and software licensing.
+Navigation accuracy may be affected by:
 
-Patent rights remain separate from the software copyright license unless expressly stated otherwise.
+* Camera placement
+* AprilTag detection accuracy
+* Marker placement
+* Calibration accuracy
+* Anatomical registration accuracy
+* Quality of the individual head surface data
+* Coordinate transformation procedures
 
-## 9. Contact
+Users should independently validate the accuracy and reliability of the system for their intended research application.
+
+This software is intended for research purposes and is not provided as a certified medical device.
+
+## 6. Citation
+
+If you use this software in academic research, please cite the relevant publication describing the Dokkyo NeuroNavigation System.
+
+Citation information will be added here upon publication.
+
+## 7. License
+
+This software is provided primarily for non-commercial academic, research, and educational purposes.
+
+Certain technologies implemented in this software are the subject of pending patent applications.
+
+Use of the source code does not automatically grant any rights under patents or pending patent applications.
+
+Please read `LICENSE.txt` before using, modifying, or redistributing this software.
+
+## 8. Contact
 
 For questions regarding:
 
-* Commercial licensing
-* Patent rights
+* Research use
 * Collaborative research
-* Use beyond non-commercial academic research
+* Commercial licensing
+* Patent-related permissions
+* Technical issues
 
-please contact the authors or the relevant intellectual property / technology licensing office of Dokkyo Medical University.
-
+please contact the authors or the relevant office at Dokkyo Medical University.
