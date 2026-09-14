@@ -48,10 +48,10 @@ A computer capable of running Python and the required libraries is necessary.
 
 The system has been tested in the following environment:
 
-* Operating system: macOS 26.4.1
-* Computer: [Mac model]
-* Processor: [Apple Silicon / Intel processor]
-* Python: [Python version]
+* Operating system: macOS 26.4.1（25E253）
+* Computer: Mac Studio 2022
+* Processor: Apple M1 Max
+* Python: 3.11.13
 
 The software may also run on other operating systems and hardware configurations; however, these environments have not been fully validated.
 
