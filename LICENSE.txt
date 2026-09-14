@@ -1,0 +1,112 @@
+DOKKYO NEURONAVIGATION SYSTEM LICENSE
+
+Copyright (c) Dokkyo Medical University and contributors.
+All rights reserved except as expressly provided below.
+
+1. PURPOSE
+
+This software and associated source code are made available primarily for academic research, scientific evaluation, reproducibility, and educational purposes.
+
+Certain technologies, methods, algorithms, implementations, and system configurations associated with this software are the subject of pending patent applications.
+
+2. PERMITTED NON-COMMERCIAL USE
+
+Subject to the terms of this License, permission is granted to use, reproduce, study, and modify this software solely for non-commercial purposes, including:
+
+(a) academic research;
+(b) scientific research;
+(c) educational use;
+(d) reproduction or validation of published research; and
+(e) personal evaluation and testing.
+
+Any use must comply with all applicable laws, regulations, institutional requirements, and third-party licenses.
+
+3. COMMERCIAL USE
+
+Commercial use of this software is not permitted without prior written authorization from the relevant rights holder.
+
+Commercial use includes, but is not limited to:
+
+(a) incorporation of the software into a commercial product, service, or system;
+(b) sale, licensing, sublicensing, rental, or distribution of the software for commercial benefit;
+(c) use of the software in the development of commercial products or services;
+(d) use of the software to provide paid clinical, medical, technical, research, or consulting services;
+(e) use of the software in contract research or development performed for a commercial entity; and
+(f) any other use primarily intended for commercial advantage or monetary compensation.
+
+Commercial licensing may be available separately.
+
+4. MODIFICATION AND REDISTRIBUTION
+
+Modification of the software is permitted only for uses authorized under this License.
+
+Redistribution of the original or modified software for non-commercial purposes is permitted provided that:
+
+(a) this License is included with the redistributed software;
+(b) all copyright and attribution notices are retained;
+(c) the modified version is clearly identified as modified;
+(d) the names of Dokkyo Medical University, the authors, and contributors are not used to endorse or promote derivative works without prior written permission; and
+(e) the redistribution does not imply that patent rights have been granted.
+
+5. PATENT NOTICE
+
+Certain technologies implemented in or associated with this software are the subject of pending patent applications and may be protected by issued patents in the future.
+
+Access to, use of, modification of, or redistribution of the source code does not constitute a grant of any license or other right under any patent or pending patent application, except where expressly granted in writing by the relevant patent holder.
+
+No patent rights are granted by implication, estoppel, or otherwise.
+
+Users are responsible for determining whether their intended implementation or use of this software may fall within the scope of any applicable patent rights.
+
+Separate authorization may be required for such use.
+
+6. NO MEDICAL DEVICE AUTHORIZATION
+
+This software has been developed for research purposes.
+
+It is not provided as a certified, approved, or authorized medical device.
+
+The software must not be relied upon for clinical diagnosis, treatment decisions, surgical guidance, or other medical purposes unless separately validated, approved, and authorized in accordance with applicable laws and regulations.
+
+7. DISCLAIMER OF WARRANTY
+
+THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE AUTHORS, CONTRIBUTORS, AND AFFILIATED INSTITUTIONS DISCLAIM ALL WARRANTIES, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, RELIABILITY, NON-INFRINGEMENT, AND FITNESS FOR CLINICAL OR MEDICAL USE.
+
+8. LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL THE AUTHORS, CONTRIBUTORS, OR AFFILIATED INSTITUTIONS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, CONSEQUENTIAL, OR OTHER DAMAGES ARISING FROM OR RELATED TO THE USE, INABILITY TO USE, MODIFICATION, DISTRIBUTION, OR IMPLEMENTATION OF THIS SOFTWARE.
+
+9. THIRD-PARTY SOFTWARE
+
+This repository may include or depend upon third-party software, libraries, datasets, or other materials.
+
+Such third-party materials remain subject to their respective licenses and terms of use.
+
+Nothing in this License grants rights beyond those that the relevant third-party licenses permit.
+
+10. TERMINATION
+
+Any rights granted under this License terminate automatically if the user fails to comply with its terms.
+
+Upon termination, the user must cease any use or distribution that is not otherwise independently authorized.
+
+11. COMMERCIAL AND PATENT LICENSING
+
+Users wishing to:
+
+* use this software commercially;
+* incorporate it into a commercial product or service;
+* obtain rights relating to patented or patent-pending technologies; or
+* use the system outside the scope permitted by this License
+
+must obtain separate written authorization from the relevant rights holder.
+
+Please contact the authors or the appropriate intellectual property or technology licensing office of Dokkyo Medical University.
+
+12. GOVERNING TERMS
+
+This License governs copyright-based permission to use this software.
+
+Patent rights, trademark rights, regulatory approvals, ethical approvals, and other legal rights or obligations are separate and are not granted except where expressly stated in writing.
