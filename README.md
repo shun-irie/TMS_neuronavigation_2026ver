@@ -14,7 +14,7 @@ Please refer to `LICENSE.txt` for conditions of use, including restrictions rela
 
 The system includes functions for:
 
-* AprilTag-based position and orientation tracking (Android apk file)
+* AprilTag-based position and orientation tracking using an Android application
 * Registration between physical and anatomical coordinate systems
 * Integration of individual head surface data
 * Transformation of coordinates into standardized brain space
@@ -26,83 +26,120 @@ The exact functions available may differ depending on the version of the reposit
 
 The required software and hardware depend on the configuration of the system.
 
-Typical requirements include:
-* AprilTag system
-  * Smartphone (Android support only)
-  * printed AprilTag (41h12:the further specification should be reffered to tag.pdf)
-  * WiFi environment (UDP communication must be available)
-* Registration system
-  * Mac 26.4.1で確認した。。。Pythonは。。。。Macの機種名
+### 3.1 AprilTag Tracking System
 
+The following components are required for AprilTag-based tracking:
 
+* Android smartphone
 
-* Python
-* AprilTag detection library
-* Compatible camera device
-* Required Python packages
-* Individual head surface or anatomical data
-* Appropriate tracking markers and experimental hardware
+  * Android is currently the only supported mobile platform.
+* Printed AprilTags
 
-Install the required Python packages using:
+  * Tag family: `tag41h12`
+  * For the recommended tag size, layout, and printing specifications, please refer to `tag.pdf`.
+* Wi-Fi network
+
+  * The smartphone and the computer running the registration system must be connected to the same network.
+  * UDP communication between the devices must be available.
+
+### 3.2 Registration and Neuro-navigation System
+
+A computer capable of running Python and the required libraries is necessary.
+
+The system has been tested in the following environment:
+
+* Operating system: macOS 26.4.1
+* Computer: [Mac model]
+* Processor: [Apple Silicon / Intel processor]
+* Python: [Python version]
+
+The software may also run on other operating systems and hardware configurations; however, these environments have not been fully validated.
+
+### 3.3 Python Environment
+
+Python is required to run the registration and neuro-navigation software.
+
+Recommended environment:
+
+```text
+Python: [version]
+```
+
+Required Python packages are listed in `requirements.txt`.
+
+Install the dependencies using:
 
 ```bash
 pip install -r requirements.txt
 ```
+
+### 3.4 Additional Hardware
+
+Depending on the intended application, the following hardware may also be required:
+
+* 3D scanner for acquisition of individual head surface geometry
+* Computer capable of receiving UDP data from the Android application
+* AprilTag markers for tracking the head and stimulation device
+* Transcranial magnetic stimulation (TMS) system, when the software is used for TMS neuronavigation
 
 ## 4. How to Use
 
-### 4.1 Clone the Repository
+### 4.1 Prepare the AprilTags
+
+Print the required AprilTags according to the specifications described in `tag.pdf`.
+
+Make sure that:
+
+* the correct `tag41h12` IDs are used;
+* the printed dimensions are accurate; and
+* the tags are mounted on a flat and rigid surface.
+
+### 4.2 Install the Android Application
+
+Install the provided APK file on an Android smartphone.
+
+The Android application detects the AprilTags and sends their position and orientation data to the computer via UDP communication.
+
+### 4.3 Configure the Network
+
+Connect the Android smartphone and the computer to the same Wi-Fi network.
+
+Configure the destination IP address and UDP port in the Android application according to the network settings of the computer running the neuro-navigation software.
+
+Make sure that UDP communication is not blocked by the operating system firewall or network configuration.
+
+### 4.4 Install the Python Environment
+
+Clone this repository:
 
 ```bash
-git clone <repository-url>
-cd <repository-name>
+git clone https://github.com/shun-irie/TMS_neuronavigation_2026ver.git
+cd TMS_neuronavigation_2026ver
 ```
 
-### 4.2 Install Dependencies
+Install the required Python packages:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4.3 Prepare the Experimental Environment
+### 4.5 Prepare Individual Head Data
 
-Before running the system, prepare the required hardware and data.
+Prepare the individual head surface data required for registration.
 
-Depending on the experimental setup, this may include:
+The head surface geometry can be obtained using a compatible 3D scanner.
 
-* Placement of AprilTags
-* Camera configuration
-* Calibration of the tracking environment
-* Acquisition or loading of individual head surface data
-* Registration of anatomical landmarks
-* Definition of target coordinates
+Anatomical landmarks used for registration should be identified according to the procedure described in the relevant documentation.
 
-### 4.4 Configure the System
+### 4.6 Run the Neuro-navigation System
 
-Set the parameters required for your experimental environment.
+Start the Android AprilTag tracking application first.
 
-These may include:
+Then run the Python-based registration and neuro-navigation software on the computer.
 
-* Camera parameters
-* AprilTag IDs and marker sizes
-* Network settings
-* Coordinate transformation parameters
-* Anatomical landmark coordinates
-* Target coordinates
+The tracking data transmitted from the smartphone are received via UDP and integrated with the individual head surface data and coordinate transformation procedures.
 
-Refer to the configuration files and comments in the source code for details.
-
-### 4.5 Run the System
-
-Run the appropriate main program for your configuration.
-
-For example:
-
-```bash
-python main.py
-```
-
-The exact execution command may differ depending on the version and experimental configuration.
+Further details regarding calibration, landmark registration, and execution procedures are described in the corresponding documentation and source code.
 
 ## 5. Important Notes
 
@@ -112,9 +149,11 @@ Navigation accuracy may be affected by:
 
 * Camera placement
 * AprilTag detection accuracy
+* Tag size and printing accuracy
 * Marker placement
+* Network communication
 * Calibration accuracy
-* Anatomical registration accuracy
+* Anatomical landmark registration
 * Quality of the individual head surface data
 * Coordinate transformation procedures
 
@@ -140,12 +179,4 @@ Please read `LICENSE.txt` before using, modifying, or redistributing this softwa
 
 ## 8. Contact
 
-For questions regarding:
-
-* Research use
-* Collaborative research
-* Commercial licensing
-* Patent-related permissions
-* Technical issues
-
-please contact the authors or the relevant office at Dokkyo Medical University.
+For questions regarding research use, collaborative research, commercial licensing, patent-related permissions, or technical issues, please contact the authors.
