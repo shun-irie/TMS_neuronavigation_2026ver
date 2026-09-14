@@ -1,4 +1,4 @@
-# Dokkyo NeuroNavigation System
+# Dokkyo NeuroNavigation System（まだまだ・・・）
 
 ## 1. Objective
 
