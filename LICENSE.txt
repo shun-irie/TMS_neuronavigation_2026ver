@@ -1,6 +1,6 @@
 DOKKYO NEURONAVIGATION SYSTEM LICENSE
 
-Copyright (c) Dokkyo Medical University and contributors.
+Copyright (c) Dokkyo Medical University and Tokyo Metropolitan College of Industrial Technology.
 All rights reserved except as expressly provided below.
 
 1. PURPOSE
