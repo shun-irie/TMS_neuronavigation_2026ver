@@ -62,7 +62,7 @@ Python is required to run the registration and neuro-navigation software.
 Recommended environment:
 
 ```text
-Python: [version]
+Python: 3.11.13
 ```
 
 Required Python packages are listed in `requirements.txt`.
