@@ -78,7 +78,7 @@ pip install -r requirements.txt
 Depending on the intended application, the following hardware may also be required:
 
 * 3D scanner for acquisition of individual head surface geometry
-* Computer capable of receiving UDP data from the Android application
+* LabView program (see VI file).
 * AprilTag markers for tracking the head and stimulation device
 * Transcranial magnetic stimulation (TMS) system, when the software is used for TMS neuronavigation
 
