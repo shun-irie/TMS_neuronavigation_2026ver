@@ -42,7 +42,7 @@ The following components are required for AprilTag-based tracking:
   * The smartphone and the computer running MEP recording system must be connected to the same network (see VI file).
   * UDP communication between the devices must be available.
 
-### 3.2 Registration and Neuro-navigation System
+### 3.2 Registration System
 
 A computer capable of running Python and the required libraries is necessary.
 
