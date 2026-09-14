@@ -31,7 +31,8 @@ Typical requirements include:
   * Smartphone (Android support only)
   * printed AprilTag (41h12:the further specification should be reffered to tag.pdf)
   * WiFi environment (UDP communication must be available)
-
+* Registration system
+  * Mac 26.4.1で確認した。。。Pythonは。。。。Macの機種名
 
 
 
