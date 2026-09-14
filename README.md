@@ -18,7 +18,7 @@ The system includes functions for:
 * Registration between physical and anatomical coordinate systems
 * Integration of individual head surface data
 * Transformation of coordinates into standardized brain space
-* Estimation and visualization of neuro-navigation targets
+* Calculation MEP mapping as a .nii.gz file
 
 The exact functions available may differ depending on the version of the repository.
 
