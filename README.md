@@ -14,7 +14,7 @@ Please refer to `LICENSE.txt` for conditions of use, including restrictions rela
 
 The system includes functions for:
 
-* AprilTag-based position and orientation tracking
+* AprilTag-based position and orientation tracking (Android apk file)
 * Registration between physical and anatomical coordinate systems
 * Integration of individual head surface data
 * Transformation of coordinates into standardized brain space
