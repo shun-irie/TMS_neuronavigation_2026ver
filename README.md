@@ -27,6 +27,13 @@ The exact functions available may differ depending on the version of the reposit
 The required software and hardware depend on the configuration of the system.
 
 Typical requirements include:
+* AprilTag system
+  * Smartphone (Android support only)
+  * printed AprilTag (41h12:the further specification should be reffered to tag.pdf)
+  * WiFi environment (UDP communication must be available)
+
+
+
 
 * Python
 * AprilTag detection library
