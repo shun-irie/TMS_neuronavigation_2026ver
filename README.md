@@ -171,6 +171,11 @@ The following anatomical landmarks should be identified on the head model:
 * Right auricular point (`A2`)
 * Vertex (`Cz`)
 
+These landmark coordinates should be marked and saved as a *.pp file using MeshLab (https://www.meshlab.net/).
+
+<img width="2558" height="1342" alt="image" src="https://github.com/user-attachments/assets/6f1f16cb-3120-4463-8304-91bc59287f4d" />
+
+
 Additional stimulation or control points may also be defined depending on the intended registration method.
 
 The head-surface mesh and corresponding landmark information are used to establish the transformation between the physical tracking coordinate system and anatomical space.
