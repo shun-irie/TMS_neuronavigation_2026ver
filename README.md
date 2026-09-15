@@ -214,6 +214,17 @@ The analysis integrates:
 * Individual head-surface geometry
 * Coordinate transformation parameters
 
+```bash
+python MEP_mapping.py
+```
+
+```python
+import MEP_mapping as mep
+MEPs = MEP_mapping(MEP_path,savePath,subj_num=int(subj_num),
+                           isFullmode=am,obj_data=obj_data,modes = mode)
+```
+
+
 The stimulation locations are transformed into anatomical and MNI coordinate systems.
 
 MEP amplitudes are spatially interpolated across the relevant scalp and brain surfaces.
