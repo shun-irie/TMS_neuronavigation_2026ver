@@ -131,6 +131,8 @@ The Android application detects the AprilTags and obtains their position and ori
 
 The Android application is distributed as a compiled APK file. Source code for this component is not included in this repository unless otherwise stated.
 
+[https://youtu.be/_zS6yGBMMZs]
+
 ### 4.3 Configure the Network
 
 Connect the Android smartphone and the computer running the MEP recording system to the same Wi-Fi network.
