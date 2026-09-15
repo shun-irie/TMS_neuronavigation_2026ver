@@ -203,7 +203,7 @@ Please refer to the provided VI file for detailed acquisition settings.
 
 ### 4.8 Run the MEP Mapping Analysis
 
-After MEP recording and registration, run the Python-based analysis software.
+After MEP recording and registration, run the Python-based MEP mapping analysis.
 
 The analysis integrates:
 
@@ -214,16 +214,38 @@ The analysis integrates:
 * Individual head-surface geometry
 * Coordinate transformation parameters
 
+The analysis can be executed directly from the command line:
+
 ```bash
 python MEP_mapping.py
 ```
 
+Alternatively, the `MEP_mapping` class can be imported and executed from another Python script:
+
 ```python
 import MEP_mapping as mep
-MEPs = MEP_mapping(MEP_path,savePath,subj_num=int(subj_num),
-                           isFullmode=am,obj_data=obj_data,modes = mode)
+
+MEPs = mep.MEP_mapping(
+    MEP_path,
+    savePath,
+    subj_num=int(subj_num),
+    isFullmode=am,
+    obj_data=obj_data,
+    modes=mode
+)
 ```
 
+The `modes` argument specifies the registration method. Available options are:
+
+* `"landmark"` — registration using anatomical landmarks
+* `"ControlPoints"` — registration using stimulation control points
+* `"Both"` — registration using both anatomical landmarks and control points
+* `"NoScanner"` — analysis using the standard MNI152 anatomical model without participant-specific 3D scanner data
+
+The `isFullmode` argument specifies the transformation model:
+
+* `True` — full affine transformation
+* `False` — restricted transformation without full affine deformation
 
 The stimulation locations are transformed into anatomical and MNI coordinate systems.
 
@@ -234,6 +256,7 @@ The analysis can export results including:
 * stimulation coordinates;
 * estimated target coordinates;
 * registration errors;
+* coil-to-target errors;
 * MEP amplitudes;
 * weighted MEP centroid coordinates; and
 * MEP maps in NIfTI (`.nii.gz`) format.
