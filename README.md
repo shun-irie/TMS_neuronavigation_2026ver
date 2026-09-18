@@ -138,7 +138,7 @@ Main window of application
 
 
 #### 4.2.1 Registration Landmark Coordinates
-At beggining of experiments, it is necessaey to registrate the zero-position p (0,0,0), q (0,0,0,-1). All coordinates should be expressed as relative coordinates respect to zero-position ("Refference" button) using targetting rod. Next, you should also registrate coordinates of landmarks (A1, A2, Nz, and Cz) . The distance from tip to center of tag were set to (0.04, 0, 0), which match to the distances between stimulus point on coil to tag (Landmark and Dropdown list). Coil mode button is an experimental feature that is availa・・・（コイルの寸法とtargeting rodの寸法を別々に登録して切り替える機能だけど、誤差を生むから、基本的にはコイルの刺激点からタグまでの距離を厳密に再現する方がいいよ）
+At beggining of experiments, it is necessaey to registrate the zero-position p (0,0,0), q (0,0,0,-1). All coordinates should be expressed as relative coordinates respect to zero-position ("Refference" button) using targetting rod. Next, you should also registrate coordinates of landmarks (A1, A2, Nz, and Cz) . The distance from tip to center of tag were set to (0.04, 0, 0), which match to the distances between stimulus point on coil to tag (Landmark and Dropdown list). Coil mode button is an experimental feature that is availa・・・（コイルの寸法とtargeting rodの寸法を別々に登録して切り替える機能だけど、誤差を生むから、基本的にはコイルの刺激点からタグまでの距離を厳密に再現する方がいいよ）んで次は、LabViewのPcのIPを指定してConnectを押し、virtual tracker buttonで標的点を設定すれば、自動的に座標のjsonデータをLabViewに送るよーん
 
 ### 4.3 Configure the Network
 
