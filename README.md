@@ -127,9 +127,9 @@ The physical size of each tag is important because AprilTag-based pose estimatio
 
 Install the provided APK file on an Android smartphone.
 
-The Android application detects the AprilTags and obtains their position and orientation information. If you need the source code, please use the Unity package data with Unity 2022.3.
+The Android application detects the AprilTags and obtains their position and orientation information. If you need the source code, please use the Unity package data with Unity 2022.3 [here](https://github.com/shun-irie/TMS_neuronavigation_2026ver/blob/main/package/app_apriltag.unitypackage).
 
-[https://youtu.be/_zS6yGBMMZs]
+[movie](https://youtu.be/_zS6yGBMMZs)
 
 <img width="362" height="182" alt="image" src="https://github.com/user-attachments/assets/ef8606fc-1853-4a6e-b360-ab948b940143" />
 
