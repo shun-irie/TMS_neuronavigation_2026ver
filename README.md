@@ -133,9 +133,10 @@ The Android application detects the AprilTags and obtains their position and ori
 
 
 <img width="362" height="182" alt="image" src="https://github.com/user-attachments/assets/ef8606fc-1853-4a6e-b360-ab948b940143" />
+Main window of application
 
 #### 4.2.1 Registration Landmark Coordinates
-At beggining of experiments, it is necessaey to registrate the zero-position p (0,0,0), q (0,0,0,-1). All coordinates should be expressed as relative coordinates respect to zero-position ("Refference" button) using targetting rod. Next, you should also registrate coordinates of landmarks (A1, A2, Nz, and Cz) . The distance from tip to center of tag were set to (0.04, 0, 0), which match to the distances between stimulus point on coil to tag.
+At beggining of experiments, it is necessaey to registrate the zero-position p (0,0,0), q (0,0,0,-1). All coordinates should be expressed as relative coordinates respect to zero-position ("Refference" button) using targetting rod. Next, you should also registrate coordinates of landmarks (A1, A2, Nz, and Cz) . The distance from tip to center of tag were set to (0.04, 0, 0), which match to the distances between stimulus point on coil to tag (Landmark and Dropdown list).
 
 ### 4.3 Configure the Network
 
