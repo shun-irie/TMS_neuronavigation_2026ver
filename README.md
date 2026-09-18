@@ -127,18 +127,38 @@ The physical size of each tag is important because AprilTag-based pose estimatio
 
 Install the provided APK file on an Android smartphone.
 
-The Android application detects the AprilTags and obtains their position and orientation information. If you need the source code, please use the unity package data on Unity (2022.3).
+The Android application detects the AprilTags and obtains their position and orientation information. If you need the source code, please use the Unity package data with Unity 2022.3.
 
 [https://youtu.be/_zS6yGBMMZs]
 
+<img width="362" height="182" alt="image" src="https://github.com/user-attachments/assets/ef8606fc-1853-4a6e-b360-ab948b940143" />
 
-<img width="362" height="182" alt="image" src="https://github.com/user-attachments/assets/ef8606fc-1853-4a6e-b360-ab948b940143" />. 
+Main window of the application.
 
-Main window of application
+#### 4.2.1 Register the Landmark Coordinates
 
+At the beginning of the experiment, first register the reference pose using the targeting rod.
 
-#### 4.2.1 Registration Landmark Coordinates
-At beggining of experiments, it is necessaey to registrate the zero-position p (0,0,0), q (0,0,0,-1). All coordinates should be expressed as relative coordinates respect to zero-position ("Refference" button) using targetting rod. Next, you should also registrate coordinates of landmarks (A1, A2, Nz, and Cz) . The distance from tip to center of tag were set to (0.04, 0, 0), which match to the distances between stimulus point on coil to tag (Landmark and Dropdown list). Coil mode button is an experimental feature that is availa・・・（コイルの寸法とtargeting rodの寸法を別々に登録して切り替える機能だけど、誤差を生むから、基本的にはコイルの刺激点からタグまでの距離を厳密に再現する方がいいよ）んで次は、LabViewのPcのIPを指定してConnectを押し、virtual tracker buttonで標的点を設定すれば、自動的に座標のjsonデータをLabViewに送るよーん
+The reference pose is defined as:
+
+* position: `p = (0, 0, 0)`
+* orientation: `q = (0, 0, 0, -1)`
+
+Press the **Reference** button to register this pose as the zero position. All subsequently measured coordinates are expressed relative to this reference pose.
+
+Next, register the anatomical landmarks `A1`, `A2`, `Nz`, and `Cz` using the targeting rod. Select the corresponding landmark from the dropdown list and place the tip of the targeting rod on the anatomical landmark.
+
+The offset from the tip of the targeting rod to the center of the AprilTag is set to:
+
+`(0.04, 0, 0) m`
+
+This offset is designed to match the spatial relationship between the stimulation point of the TMS coil and the AprilTag mounted on the coil.
+
+The **Coil Mode** button is an experimental feature that allows different offsets to be defined separately for the targeting rod and the TMS coil. However, switching between different offsets may introduce additional registration errors. Therefore, it is generally recommended to construct and use the targeting rod so that the distance and orientation from its tip to the AprilTag accurately reproduce those from the actual stimulation point of the TMS coil to its AprilTag.
+
+After completing the landmark registration, enter the IP address of the computer running LabVIEW and press the **Connect** button.
+
+Next, press the **Virtual Tracker** button to define the target stimulation position. The application automatically sends the corresponding coordinate data to LabVIEW in JSON format.
 
 ### 4.3 Configure the Network
 
