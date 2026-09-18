@@ -1,4 +1,4 @@
-# Dokkyo NeuroNavigation System
+# Dokkyo NeuroNavigation System 4-2-1からAndroidAppの使い方を説明する
 
 ## 1. Objective
 
@@ -127,9 +127,15 @@ The physical size of each tag is important because AprilTag-based pose estimatio
 
 Install the provided APK file on an Android smartphone.
 
-The Android application detects the AprilTags and obtains their position and orientation information.
+The Android application detects the AprilTags and obtains their position and orientation information. If you need the source code, please use the unity package data on Unity (2022.3).
 
-The Android application is distributed as a compiled APK file. Source code for this component is not included in this repository unless otherwise stated.
+[https://youtu.be/_zS6yGBMMZs]
+
+
+<img width="362" height="182" alt="image" src="https://github.com/user-attachments/assets/ef8606fc-1853-4a6e-b360-ab948b940143" />
+
+#### 4.2.1 Registration Landmark Coordinates
+At beggining of experiments, it is necessaey to registrate the zero-position p (0,0,0), q (0,0,0,-1). All coordinates should be expressed as relative coordinates respect to zero-position ("Refference" button) using targetting rod. Next, you should also registrate coordinates of landmarks (A1, A2, Nz, and Cz) . The distance from tip to center of tag were set to (), which match to the distances between stimulus point on coil to tag.
 
 ### 4.3 Configure the Network
 
@@ -171,6 +177,11 @@ The following anatomical landmarks should be identified on the head model:
 * Right auricular point (`A2`)
 * Vertex (`Cz`)
 
+These landmark coordinates should be marked and saved as a *.pp file using MeshLab (https://www.meshlab.net/).
+
+<img width="2558" height="1342" alt="image" src="https://github.com/user-attachments/assets/6f1f16cb-3120-4463-8304-91bc59287f4d" />
+
+
 Additional stimulation or control points may also be defined depending on the intended registration method.
 
 The head-surface mesh and corresponding landmark information are used to establish the transformation between the physical tracking coordinate system and anatomical space.
@@ -198,7 +209,7 @@ Please refer to the provided VI file for detailed acquisition settings.
 
 ### 4.8 Run the MEP Mapping Analysis
 
-After MEP recording and registration, run the Python-based analysis software.
+After MEP recording and registration, run the Python-based MEP mapping analysis.
 
 The analysis integrates:
 
@@ -209,6 +220,39 @@ The analysis integrates:
 * Individual head-surface geometry
 * Coordinate transformation parameters
 
+The analysis can be executed directly from the command line:
+
+```bash
+python MEP_mapping.py
+```
+
+Alternatively, the `MEP_mapping` class can be imported and executed from another Python script:
+
+```python
+import MEP_mapping as mep
+
+MEPs = mep.MEP_mapping(
+    MEP_path,
+    savePath,
+    subj_num=int(subj_num),
+    isFullmode=am,
+    obj_data=obj_data,
+    modes=mode
+)
+```
+
+The `modes` argument specifies the registration method. Available options are:
+
+* `"landmark"` — registration using anatomical landmarks
+* `"ControlPoints"` — registration using stimulation control points
+* `"Both"` — registration using both anatomical landmarks and control points
+* `"NoScanner"` — analysis using the standard MNI152 anatomical model without participant-specific 3D scanner data
+
+The `isFullmode` argument specifies the transformation model:
+
+* `True` — full affine transformation
+* `False` — restricted transformation without full affine deformation
+
 The stimulation locations are transformed into anatomical and MNI coordinate systems.
 
 MEP amplitudes are spatially interpolated across the relevant scalp and brain surfaces.
@@ -218,6 +262,7 @@ The analysis can export results including:
 * stimulation coordinates;
 * estimated target coordinates;
 * registration errors;
+* coil-to-target errors;
 * MEP amplitudes;
 * weighted MEP centroid coordinates; and
 * MEP maps in NIfTI (`.nii.gz`) format.
