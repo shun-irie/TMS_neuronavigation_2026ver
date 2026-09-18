@@ -134,7 +134,7 @@ The Android application is distributed as a compiled APK file. Source code for t
 [https://youtu.be/_zS6yGBMMZs]
 
 #### 4.2.1 Registration Landmark Coordinates
-At beggining of experiments, it is necessaey to registrate coordinates of landmarks (A1, A2, Nz, and Cz) using targetting rod. The distance from tip to center of tag were set to ().
+At beggining of experiments, it is necessaey to registrate coordinates of landmarks (A1, A2, Nz, and Cz) using targetting rod. The distance from tip to center of tag were set to (), which match to the distances between stimulus point on coil to tag.
 
 ### 4.3 Configure the Network
 
