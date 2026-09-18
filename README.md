@@ -1,4 +1,4 @@
-# Dokkyo NeuroNavigation System 4-2-1からAndroidAppの使い方を説明する
+# Dokkyo NeuroNavigation System
 
 ## 1. Objective
 
