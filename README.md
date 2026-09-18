@@ -133,6 +133,9 @@ The Android application is distributed as a compiled APK file. Source code for t
 
 [https://youtu.be/_zS6yGBMMZs]
 
+#### 4.2.1 Registration Landmark Coordinates
+At beggining of experiments, it is necessaey to registrate coordinates of landmarks (A1, A2, Nz, and Cz) using targetting rod. 
+
 ### 4.3 Configure the Network
 
 Connect the Android smartphone and the computer running the MEP recording system to the same Wi-Fi network.
