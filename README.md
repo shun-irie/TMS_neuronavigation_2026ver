@@ -8,7 +8,7 @@ The system is designed to support neuro-navigation using AprilTag-based tracking
 
 Certain technologies implemented in this system are the subject of pending patent applications.
 
-Please refer to `LICENSE.txt` for conditions of use, including restrictions related to commercial use, redistribution, and patent rights.
+Please refer to [`LICENSE.txt`](https://github.com/shun-irie/TMS_neuronavigation_2026ver/blob/main/LICENSE.txt) for conditions of use, including restrictions related to commercial use, redistribution, and patent rights.
 
 ## 2. Features
 
