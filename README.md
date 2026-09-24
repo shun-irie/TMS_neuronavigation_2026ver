@@ -292,6 +292,27 @@ The analysis can export results including:
 
 ---
 
+### 4.9 Dataset Used in the Study
+
+The dataset used in the study is available in the `Dataset` folder.
+
+The `MEPs` folder contains the raw MEP recordings together with coordinate information stored in separate columns in LabVIEW Measurement (`.lvm`) files.
+
+The `nii data` folder contains the analysis results generated using the scripts described above.
+
+The main output file types are:
+
+* `.json` — detailed coordinate and registration data;
+* `.node` — weighted centroid coordinates for visualization in Surfice; and
+* `.nii.gz` — interpolated MEP mapping data rendered in the standard brain space.
+
+To protect participant privacy, the individual 3D head-surface data, including facial geometry, are not included in the public dataset. Therefore, reproduction of the full participant-specific registration analysis using 3D scanner data is not possible from the released dataset.
+
+For reproducibility analyses using the publicly available data, please use the `"NoScanner"` mode, which performs the analysis using the standard MNI152 anatomical model without participant-specific 3D head-surface data.
+
+The released files correspond to the processed results used for the MEP mapping analyses in the study.
+
+
 ## 5. Communication
 
 ### 5.1 Overview
