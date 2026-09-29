@@ -90,7 +90,7 @@ pyvista==0.47.1
 networkx==3.6.1
 chardet==5.2.0
 trimesh==4.11.3
-embreex==0.1.6
+embreex==2.17.7
 ```
 
 Install the required packages using:
