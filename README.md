@@ -80,7 +80,7 @@ Required Python packages are listed in `requirements.txt`.
 The tested package versions are:
 
 ```text
-numpy==2.4.2
+numpy==1.26.4
 pandas==2.3.3
 scipy==1.16.3
 scikit-learn==1.8.0
