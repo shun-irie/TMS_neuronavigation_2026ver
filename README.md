@@ -89,6 +89,7 @@ nibabel==5.4.0
 pyvista==0.47.1
 networkx==3.6.1
 chardet==5.2.0
+trimesh==4.11.3
 ```
 
 Install the required packages using:
