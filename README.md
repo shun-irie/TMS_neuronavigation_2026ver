@@ -535,3 +535,6 @@ For questions regarding:
 
 please contact the authors.
 Mail to shun.irie.0916@icloud.com
+
+## 12. Citation
+10.5281/zenodo.23073619
