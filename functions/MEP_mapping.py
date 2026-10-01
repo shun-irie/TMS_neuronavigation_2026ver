@@ -1125,10 +1125,10 @@ if __name__ == "__main__":
     modes = ["landmark","ControlPoints","Both","NoScanner"]
     affine_mode = [True,False]
     print("please input the number [0]landmark,[1]control points,[2]hybrid,[3]Without scanner")
-    mode = modes[input(" ")]
+    mode = modes[int(input(" "))]
     print("Do you use full affine mode? (y/N)")
     am_question = input(" ")
-    if am_question == y:
+    if am_question == "y":
         am = True
     else:
         am = False
