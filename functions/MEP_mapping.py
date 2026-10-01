@@ -1124,10 +1124,16 @@ if __name__ == "__main__":
     savePath = tf.askdirectory()
     modes = ["landmark","ControlPoints","Both","NoScanner"]
     affine_mode = [True,False]
-    
-    for mode in modes:
-        for am in affine_mode:
-            MEPs = MEP_mapping(MEP_path,savePath,subj_num=int(subj_num),
+    print("please input the number [0]landmark,[1]control points,[2]hybrid,[3]Without scanner")
+    mode = modes[input(" ")]
+    print("Do you use full affine mode? (y/N)")
+    am_question = input(" ")
+    if am_question == y:
+        am = True
+    else:
+        am = False
+    MEPs = MEP_mapping(MEP_path,savePath,subj_num=int(subj_num),
                            isFullmode=am,obj_data=obj_data,modes = mode)
+            
     
     
