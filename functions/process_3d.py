@@ -2208,4 +2208,12 @@ def save_geometrical_data(scan: Scanner_Param, obj_data: dict):
 #%% Processes
 if __name__ == "__main__":
     obj_data = load_obj_data()
-    scan = Scanner_Param(obj_data)
+
+    if obj_data is not None:
+        scan = Scanner_Param(obj_data)
+
+        if not scan.isLoad:
+            save_geometrical_data(scan, obj_data)
+            print("Geometrical data saved.")
+        else:
+            print("Cached geometrical data loaded. No recalculation/save needed.")
